@@ -1,0 +1,27 @@
+<div class="application">
+  <div class="application-tile" (mouseover)="showIcon=true" (mouseleave)="showIcon=false">
+    <div>
+      <span>{{ info.name | uppercase }}</span>
+      <span *ngIf="showIcon" class="glyphicon glyphicon-option-horizontal pull-right" [shAttachMenu]="menu">      
+      </span>
+    </div>
+    <div>No Of Rules: {{ info.noOfRules }}</div>
+  </div>
+  <sh-context-menu #menu>
+    <ng-template shContextMenuItem (click)="onClick($event)">
+      <div>Duplicate</div>
+    </ng-template>
+    <ng-template shContextMenuItem (click)="onClick($event)">
+      <div>Edit</div>
+    </ng-template>
+    <ng-template *ngIf="info.id != 0" shContextMenuItem (click)="onClick($event)">
+      <div>Delete</div>
+    </ng-template>
+    <ng-template *ngIf="info.id == 0" shContextMenuItem (click)="onClick($event)">
+      <div>Restore</div>
+    </ng-template>
+    <ng-template *ngIf="info.id != 0" shContextMenuItem (click)="onClick($event)">
+      <div>Rename</div>
+    </ng-template>
+  </sh-context-menu>  
+</div>

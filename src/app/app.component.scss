@@ -1,0 +1,20 @@
+.app {
+    .page-header {
+        //Set 100% width
+        display: block;
+        width: 100%;
+        margin: 0px;
+        border: 0px;
+        padding: 25px;
+
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        background: rgb(30,87,153); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 40%, rgba(32,124,202,1) 67%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 40%,rgba(32,124,202,1) 67%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 40%,rgba(32,124,202,1) 67%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+    }
+}
